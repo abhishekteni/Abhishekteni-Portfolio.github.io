@@ -596,7 +596,7 @@ footer p:nth-child(2) {
     width: 160px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 600px) {
   section {
     background-image: none;
     background-color: black;
@@ -605,7 +605,7 @@ footer p:nth-child(2) {
     display: none;
   }
   .text-container p:nth-child(2) {
-    line-height: 50px;
+    line-height: 80px;
     margin: 0px;
     padding: 0px;
   }
