@@ -605,9 +605,10 @@ footer p:nth-child(2) {
     display: none;
   }
   .text-container p:nth-child(2) {
-    line-height: 40px;
+    line-height: 80px;
     margin: 0px;
     padding: 0px;
+    color: #000000;
   }
   .text-container {
     top: 50%;
