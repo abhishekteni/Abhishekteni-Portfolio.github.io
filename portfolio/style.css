@@ -596,7 +596,7 @@ footer p:nth-child(2) {
     width: 160px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   section {
     background-image: none;
     background-color: black;
