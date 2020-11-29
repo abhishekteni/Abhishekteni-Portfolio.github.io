@@ -605,7 +605,7 @@ footer p:nth-child(2) {
     display: none;
   }
   .text-container p:nth-child(2) {
-    line-height: 80px;
+    line-height: auto;
     margin: 0px;
     padding: 0px;
   }
