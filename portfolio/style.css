@@ -452,7 +452,7 @@ button:active {
 }
 .contact-me a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 footer {
   height: 300px;
@@ -482,7 +482,13 @@ footer p:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e6e3e3;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   margin: 20px 10px;
   border-radius: 50%;
 }
@@ -490,7 +496,7 @@ footer p:nth-child(2) {
   display: flex;
 }
 .social-icons i {
-  color: #000000;
+  color: #05d9e8;
 }
 .social-icons a:hover,
 .a-social-b a:hover {
@@ -517,16 +523,21 @@ footer p:nth-child(2) {
   padding: 0px;
   margin: 0px;
   line-height: 0px;
-  background-color: #ffffff;
-  border: 1px solid #cbcbcb;
+  background: rgba(255, 255, 255, 0.2);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* border: 1px solid #cbcbcb; */
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 .a-social-b i {
-  color: #2b2b2b;
+  color: #05d9e8;
   font-size: 20px;
 }
 .a-social-b i:hover {
-  color: #05d9e8;
+  color: #ffffff;
   font-size: 20px;
 }
 @media (max-width: 1000px) {
