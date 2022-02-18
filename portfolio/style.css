@@ -714,6 +714,7 @@ footer p:nth-child(2) {
   }
   .toggle:before {
     content: "\f0c9";
+    color: #05d9e8;
     font-family: fontAwesome;
     line-height: 30px;
     font-size: 30px;
