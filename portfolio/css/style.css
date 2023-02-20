@@ -243,7 +243,10 @@ button:active {
   height: 550px;
 }
 .about-container img {
-  height: 350px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid var(--skin-color);
 }
 .about-text {
   width: 550px;
@@ -647,6 +650,8 @@ footer p:nth-child(2) {
   }
   .about-container img {
     height: 200px;
+    width: 200px;
+    border-radius: 50%;
   }
   .about-text {
     width: 400px;
