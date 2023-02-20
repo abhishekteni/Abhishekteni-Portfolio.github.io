@@ -27,21 +27,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style-switcher.css ">
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
   </head>
   <body>
     <section>
-      <nav>
+      <div class="overlay_23"></div>
+      <aside class="sidebar" id="sidebar">
+      <nav class="nav">
+        <div class="nav__logo">
         <a href="#home" class="LOGO"><img src="./invader-solid-24.png" /></a>
+        </div>
+        <div class="nav__menu">
+          <div class="menu">
         <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about" class="home">About</a></li>
-          <li><a href="#service" class="home">Services</a></li>
-          <li><a href="#contact" class="home">Contact</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class=" nav__link">About</a></li>
+          <li class="nav__item"><a href="#service" class=" nav__link">Services</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link ">Contact</a></li>
         </ul>
+        </div>
+        </div>
         <div class="toggle"></div>
       </nav>
-
+      </aside>
       <!-- <div class="bgd" id="home">
         <p>Design</p>
       </div> -->
@@ -49,7 +63,7 @@
       <div class="text-container">
         <p>hey!</p>
         <p class="text-focus-in">I'M ABHISHEK TENI</p>
-        <p class="text-focus-in">Computer Engineer</p>
+        <p class="text-focus-in"><span class="typing">Computer Engineer</span></p>
         <a href="#contact"><button class="hire-btn">Hire me</button></a>
         <a href="https://abhishekteni.github.io/resume.github.io/">
           <button type="submit" class="down-cv">
@@ -66,20 +80,8 @@
         <p class="text-focus-in">About Me</p>
         <p class="text-focus-in">Developer & Designer</p>
         <p class="text-focus-in">
-          Hey! I am Abhishek Teni, and I completed my engineering from Smt.
-          Kashibai Navale college of engineering, Pune. Moreover, I have a great
-          affinity for creating interactive web apps and solving technical
-          problems. In my opinion, my technological attributes consist of skills
-          such as HTML, CSS, JS, React, Node, Python, MachineLearning & UI/UX.
-          Currently, I am in pursuit of my further studies. However, before
-          embarking on my further studies I want to learn and gain some valuable
-          experience in this domain.
-        </p>
-        <p class="text-focus-in">
-          I offer my services in the design and development of various
-          applications. I request you to go through my core competencies from my
-          resume and provide me with an opportunity to serve your business
-          needs.
+          Hey! I am Abhishek Teni, currently pursuing MSc in Data Science and Analytics from Maynooth University, and I completed my engineering from Smt. Kashibai Navale college of engineering, Pune. Moreover, I have an affinity for creating interactive web apps and solving technical problems. In my opinion, my technological attributes consist of skills such as HTML, CSS, JS, React, Node, Python, R-Programing, Postgresql, MongoDB, MachineLearning & UI/UX. I am eager to learn and gain some valuable experience in this domain.
+          I offer my services in the design and development of various applications. Please have a comprehensive view of my core competencies from my resume and provide me with an opportunity to serve your business needs.
         </p>
         <!-- <button>Hire Me</button>
         <button>Downloadcv</button> -->
@@ -106,7 +108,7 @@
             Javascript, React.js, Python, and Node.js. For further information,
             you can refer to my resume.
           </p>
-          <a href="#home" class="active"> <button>Readmore</button></a>
+          <a href="#home" class="active"> <button id="myBtn">Readmore</button></a>
         </div>
         <div class="box-2">
           <span>2</span>
@@ -117,7 +119,7 @@
             for the e-cell committee of my college and handled design &
             development.
           </p>
-          <a href="#home" class="active"> <button>Readmore</button></a>
+          <a href="#home" class="active"> <button id="myBtn1">Readmore</button></a>
         </div>
         <div class="box-3">
           <span>3</span>
@@ -130,19 +132,74 @@
             various sectors. I am sufficiently versed with machine learning
             algorithms, NLP & neural networks.
           </p>
-          <a href="#home" class="active"> <button>Readmore</button></a>
+          <a href="#home" class="active"> <button id="myBtn2">Readmore</button></a>
         </div>
+      </div>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+          <!-- <div class="modal-footer">
+            <h3>Modal Footer</h3>
+          </div> -->
+        </div>
+      
+      </div>
+      <div id="myModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close1">&times;</span>
+            <h2>1</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+          <!-- <div class="modal-footer">
+            <h3>Modal Footer</h3>
+          </div> -->
+        </div>
+      
+      </div>
+      <div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close2">&times;</span>
+            <h2>Mo2</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+          <!-- <div class="modal-footer">
+            <h3>Modal Footer</h3>
+          </div> -->
+        </div>
+      
       </div>
     </div>
     <!------------------------------- education------------------------------->
     <!-- <div class="trime-text">
       <p>Education</p>
     </div>
-    <div class="yellowline"></div>
+    
     <div class="edu">
       <div class="timeline">
         <div class="container left">
           <div class="content">
+            <div class="content-l"></div>
             <h2>2017-2021</h2>
             <h3>Smt.Kashibai navale college of Engineering,pune</h3>
             <p>
@@ -150,6 +207,7 @@
               Sinhgad institute in the field of computer science.
             </p>
           </div>
+          
         </div>
         <div class="container right">
           <div class="content">
@@ -167,7 +225,7 @@
     <div class="contact-me" id="contact">
       <p>If you have a project in mind for me?</p>
       <br />
-      <button><a href="tel:+91 7034129482">Contact Me</a></button>
+      <button><a href="tel:+353 83009 6651">Contact Me</a></button>
     </div>
     <!-- footer -->
     <footer>
@@ -200,15 +258,34 @@
         ><i class="fa fa-linkedin"></i
       ></a>
     </div>
+
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fa fa-cog fa-spin"></i>
+      </div>
+      <h4> Theme Color</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="./main.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
+      
       $(document).ready(function () {
         $(".toggle").click(function () {
           $(".toggle").toggleClass("active");
           $("nav").toggleClass("active");
+          $(".sidebar").toggleClass("active");
         });
       });
     </script>
+    <script src="./style-switcher.js"></script>
+   
   </body>
 </html>
